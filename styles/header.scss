@@ -1,5 +1,40 @@
-.header-top {
-    position: absolute;
-    top: 0;
-    left: 50%;
+.header {
+
+    &-top {
+        position: absolute;
+        top: 30px;
+        width: 60%;
+        height: 55px;
+        left: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        img {
+            max-height: 70px;
+        }
+    }
+
+    &-text {
+        min-width: 15%;
+        text-align: right;
+        margin: auto 0;
+    }
+
+    &-phone {
+        font-size: 1.5em;
+        color: $dark-blue;
+    }
+
+    &-mail {
+        font-size: 1.2em;
+        color: $dark-blue;
+        text-decoration: none;
+    }
+
+    &-mail:hover {
+        text-decoration: underline;
+    }
+
 }
