@@ -1,0 +1,24 @@
+.content-wrapper {
+  display: flex;
+  background-color: $light-blue;
+  justify-content: flex-start;
+  padding-top: 25px;
+
+  .content-logo {
+    text-align: right;
+    width: 680px;
+    padding-right: 100px;
+    padding-top: 50px;
+  }
+
+  .content-text {
+    max-width: 600px;
+    font-size: 1.2em;
+    color: black;
+
+    ul {
+      list-style-image: url('../images/content_ul.png');
+    }
+  }
+
+}

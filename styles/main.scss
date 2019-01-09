@@ -1,11 +1,13 @@
 $dark-blue: #414e7e;
+$light-blue: #e6f1fa;
 
 @import 'header';
 @import 'menu';
 @import 'hero';
+@import 'content';
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-body {     
-    font-family: 'Rubik', sans-serif;
+body {
+  font-family: 'Rubik', sans-serif;
 }
