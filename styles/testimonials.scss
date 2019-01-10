@@ -6,7 +6,7 @@
 #testimonials-slider {
     position: relative;
     overflow: hidden;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     border-radius: 4px;
   }
   
@@ -24,25 +24,38 @@
     float: left;
     margin: 0;
     padding: 0;
-    width: 600px;
-    height: 300px;
-    background: #ccc;
+    width: 1200px;
+    height: 350px;
     text-align: center;
+
+    p {
+        padding: 50px 300px 0 300px;
+        font-size: 1.4em;
+        font-weight: normal;
+        text-align: left;
+        line-height: 1.4em;
+        position: relative;
+        span {
+            position: absolute;
+            display: block;
+            right: 250px;
+            padding-top: 10px;
+        }
+    }
   }
   
   a.control_prev, a.control_next {
     position: absolute;
-    top: 40%;
+    top: 25%;
     z-index: 999;
     display: block;
     padding: 4% 3%;
     width: auto;
     height: auto;
-    background: #2a2a2a;
-    color: #fff;
+    color: #7c88b1;
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 2.6em;
     opacity: 0.8;
     cursor: pointer;
   }
@@ -67,4 +80,17 @@
     width: 160px;
     font-size: 18px;
   }
+
+  .slider-quotes-open {
+    position: absolute;
+    bottom: 40px;
+    left: 180px;
+  }
+
+  .slider-quotes-close {
+    position: absolute;
+    top: 40px;
+    right: 180px;
+  }
+
 }
