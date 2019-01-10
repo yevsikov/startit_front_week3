@@ -214,6 +214,87 @@
   list-style-image: url("../images/content_ul.png");
 }
 
+.apartments-wrapper {
+  position: relative;
+}
+
+.apartments-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.apartments-top-border {
+  position: absolute;
+  display: block;
+  height: 140px;
+  width: 100%;
+  background-color: #414e7e;
+  z-index: 1;
+}
+
+.apartments-bottom-border {
+  position: absolute;
+  display: block;
+  height: 140px;
+  width: 100%;
+  background-color: #414e7e;
+  z-index: 1;
+  bottom: 0px;
+}
+
+.apartments-image {
+  max-height: 480px;
+}
+
+.apartments-item {
+  position: relative;
+  margin: 13px 15px;
+}
+
+.apartments-line-start {
+  padding-top: 15px;
+}
+
+.apartments-line-end {
+  padding-bottom: 15px;
+}
+
+.apartments-item-description {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #414e7e;
+  font-size: 1.6em;
+  font-weight: bold;
+  z-index: 10;
+  padding: 20px 35px;
+}
+
+.description-right-bottom {
+  bottom: 0;
+  right: 0;
+}
+
+.description-left-bottom {
+  left: 0;
+  bottom: 0;
+}
+
+.description-right-top {
+  top: 0;
+  right: 0;
+}
+
+.description-left-top {
+  left: 0;
+  top: 0;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
 }
