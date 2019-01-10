@@ -439,6 +439,76 @@
   margin-top: 0;
 }
 
+.testimonials-wrapper {
+  background-color: #414e7e;
+  color: #fff;
+}
+
+.testimonials-wrapper #testimonials-slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+.testimonials-wrapper #testimonials-slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+.testimonials-wrapper #testimonials-slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+}
+
+.testimonials-wrapper a.control_prev, .testimonials-wrapper a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.testimonials-wrapper a.control_prev:hover, .testimonials-wrapper a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+.testimonials-wrapper a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+.testimonials-wrapper a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.testimonials-wrapper .slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
 }
