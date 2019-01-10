@@ -11,27 +11,33 @@
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .header-logo img {
-  max-height: 70px; }
+  max-height: 70px;
+}
 
 .header-text {
   min-width: 15%;
   text-align: right;
-  margin: auto 0; }
+  margin: auto 0;
+}
 
 .header-phone {
   font-size: 1.5em;
-  color: #414e7e; }
+  color: #414e7e;
+}
 
 .header-mail {
   font-size: 1.2em;
   color: #414e7e;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .header-mail:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .menu {
   position: absolute;
@@ -41,97 +47,142 @@
   background-color: rgba(255, 255, 255, 0.5);
   color: #414e7e;
   height: 60px;
-  font-size: 1.1em; }
-  .menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .menu ul li {
-      margin: 3px 60px;
-      list-style-type: none;
-      cursor: pointer; }
-    .menu ul li:hover {
-      text-decoration: underline; }
-    .menu ul li.menu-image {
-      margin: -12px 0 0 0; }
-      .menu ul li.menu-image img {
-        max-height: 50px; }
-  .menu .menu-level-two {
-    display: none; }
-  .menu .menu-level-one {
-    height: 39px; }
-  .menu .menu-level-one:hover > .menu-level-two {
-    position: absolute;
-    top: 60px;
-    display: block;
-    background-color: rgba(255, 255, 255, 0.65);
-    padding-left: 0;
-    margin-left: -20px; }
-    .menu .menu-level-one:hover > .menu-level-two li {
-      margin: 0;
-      padding: 10px 20px;
-      text-decoration: none; }
-    .menu .menu-level-one:hover > .menu-level-two li:hover {
-      background-color: rgba(255, 255, 255, 0.8);
-      text-decoration: none; }
-  .menu .menu-level-one::after {
-    font: normal normal normal 14px/1 FontAwesome;
-    content: "\f107"; }
+  font-size: 1.1em;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.menu ul li {
+  margin: 3px 60px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  text-decoration: underline;
+}
+
+.menu ul li.menu-image {
+  margin: -12px 0 0 0;
+}
+
+.menu ul li.menu-image img {
+  max-height: 50px;
+}
+
+.menu .menu-level-two {
+  display: none;
+}
+
+.menu .menu-level-one {
+  height: 39px;
+}
+
+.menu .menu-level-one:hover > .menu-level-two {
+  position: absolute;
+  top: 60px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.65);
+  padding-left: 0;
+  margin-left: -20px;
+}
+
+.menu .menu-level-one:hover > .menu-level-two li {
+  margin: 0;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.menu .menu-level-one:hover > .menu-level-two li:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.menu .menu-level-one::after {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f107";
+}
 
 .hero {
   width: 100%;
   height: 1080px;
   background-image: url("../images/hero.jpg");
-  text-align: center; }
-  .hero-wrapper {
-    padding-top: 185px;
-    height: 100%;
-    color: white;
-    width: 1200px;
-    margin: auto; }
-  .hero-social {
-    text-align: right;
-    padding-right: 30px;
-    font-size: 2.3em;
-    line-height: 1.4em; }
-    .hero-social a {
-      margin-bottom: 20px;
-      color: #414e7e;
-      opacity: 0.7; }
-    .hero-social a:hover {
-      opacity: 1; }
-  .hero h1.hero-title {
-    font-size: 5.5em;
-    font-weight: normal;
-    line-height: 0; }
-  .hero h2.hero-title {
-    font-size: 2.2em;
-    font-weight: normal;
-    line-height: 1.1em;
-    margin-bottom: 105px; }
-  .hero-button {
-    display: inline-block;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 1.4em;
-    padding: 20px 30px;
-    color: white;
-    text-decoration: none; }
-  .hero-button:hover {
-    background-color: #a1a3b5;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    opacity: 0.7; }
-  .hero-description {
-    padding-top: 135px; }
-  .hero-decoration {
-    position: absolute;
-    top: 440px;
-    left: -80px; }
+  text-align: center;
+}
+
+.hero-wrapper {
+  padding-top: 185px;
+  height: 100%;
+  color: white;
+  width: 1200px;
+  margin: auto;
+}
+
+.hero-social {
+  text-align: right;
+  padding-right: 30px;
+  font-size: 2.3em;
+  line-height: 1.4em;
+}
+
+.hero-social a {
+  margin-bottom: 20px;
+  color: #414e7e;
+  opacity: 0.7;
+}
+
+.hero-social a:hover {
+  opacity: 1;
+}
+
+.hero h1.hero-title {
+  font-size: 5.5em;
+  font-weight: normal;
+  line-height: 0;
+}
+
+.hero h2.hero-title {
+  font-size: 2.2em;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin-bottom: 105px;
+}
+
+.hero-button {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1.4em;
+  padding: 20px 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background-color: #a1a3b5;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.hero-description {
+  padding-top: 135px;
+  position: relative;
+}
+
+.hero-decoration {
+  position: absolute;
+  top: 440px;
+  left: -80px;
+}
 
 .content-wrapper {
   display: -webkit-box;
@@ -142,18 +193,27 @@
   -ms-flex-pack: start;
   justify-content: flex-start;
   padding-top: 25px;
-  padding-bottom: 25px; }
-  .content-wrapper .content-logo {
-    text-align: right;
-    width: 680px;
-    padding-right: 100px;
-    padding-top: 50px; }
-  .content-wrapper .content-text {
-    max-width: 600px;
-    font-size: 1.2em;
-    color: black; }
-    .content-wrapper .content-text ul {
-      list-style-image: url("../images/content_ul.png"); }
+  padding-bottom: 25px;
+}
+
+.content-wrapper .content-logo {
+  text-align: right;
+  width: 680px;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+
+.content-wrapper .content-text {
+  max-width: 600px;
+  font-size: 1.2em;
+  color: black;
+  position: relative;
+}
+
+.content-wrapper .content-text ul {
+  list-style-image: url("../images/content_ul.png");
+}
 
 body {
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Rubik', sans-serif;
+}
