@@ -324,7 +324,7 @@
   background-repeat: repeat-y;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .tabs-list ul {
@@ -387,6 +387,11 @@
   text-decoration: none;
   margin-top: 20px;
   display: inline-block;
+}
+
+.tabs-content .tabs-cta:hover {
+  opacity: 0.95;
+  padding: 20px 32px;
 }
 
 .text-centered {
