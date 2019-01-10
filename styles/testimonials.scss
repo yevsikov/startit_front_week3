@@ -1,7 +1,6 @@
 .testimonials-wrapper {
     background-color: $dark-blue;
     color: #fff;
-
  
 #testimonials-slider {
     position: relative;
@@ -62,7 +61,7 @@
   
   a.control_prev:hover, a.control_next:hover {
     opacity: 1;
-    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
   
   a.control_prev {

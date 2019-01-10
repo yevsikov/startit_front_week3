@@ -1,0 +1,59 @@
+.about-wrapper {
+
+    background-color: #c3e0f8;
+    width: 100%;
+    text-align: center;
+
+    .about-carousel {
+        display: inline-block;
+        padding-bottom: 50px;
+    }
+
+    h2 {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 2em;
+        font-weight: normal;
+        margin: 0 auto 50px auto;
+    }
+    .carousel {
+        float: left;
+        width: 1120px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .carousel-slide {
+        position: relative;
+        float: left;
+        width: 250px;
+        height: 400px;
+        margin: 0 15px;
+        span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(255,255,255,.7);
+            width: 100%;
+            font-size: 1.5em;
+            padding: 15px 0;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    #slideCarouselRight, #slideCarouselLeft {
+        float: left;
+        cursor: pointer;
+        top: 190px;
+        position: relative;
+        font-size: 2.5em;
+        padding: 0 15px;
+        color: $dark-blue;
+    }
+
+    #slideCarouselRight:hover, #slideCarouselLeft:hover {
+     opacity: 0.85;   
+    }
+
+}

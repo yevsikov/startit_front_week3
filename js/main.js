@@ -9,9 +9,9 @@ $( function() {
 
 
 //CUSTOM SLIDER
-  // setInterval(function () {
-  //     moveRight();
-  // }, 3000);
+  setInterval(function () {
+      moveRight();
+  }, 3000);
   
 	var slideCount = $('#testimonials-slider ul li').length;
 	var slideWidth = $('#testimonials-slider ul li').width();
@@ -51,5 +51,27 @@ $( function() {
       e.preventDefault();
       moveRight();
     });
+
+
+    //CAROUSEL
+
+    $('#slideCarouselLeft').click(function (e) {
+      e.preventDefault();
+      var $lastElement = $('.carousel div:last');
+      var $firstElement = $('.carousel div:first');
+      $lastElement.insertBefore($firstElement);
+      $lastElement.show();
+      $('.carousel div:gt(3)').hide();
+  });
+  
+  $('#slideCarouselRight').click(function (e) {
+    e.preventDefault();
+      var $lastElement = $('.carousel div:last');
+      var $firstElement = $('.carousel div:first');
+      var $fourthElement = $('.carousel div:nth-child(5)');
+      $firstElement.insertAfter($lastElement);
+      $('.carousel div:gt(4)').hide();
+      $fourthElement.show();
+  });
 
 });    

@@ -505,6 +505,8 @@
 .testimonials-wrapper a.control_prev:hover, .testimonials-wrapper a.control_next:hover {
   opacity: 1;
   -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .testimonials-wrapper a.control_prev {
@@ -533,6 +535,66 @@
   position: absolute;
   top: 40px;
   right: 180px;
+}
+
+.about-wrapper {
+  background-color: #c3e0f8;
+  width: 100%;
+  text-align: center;
+}
+
+.about-wrapper .about-carousel {
+  display: inline-block;
+  padding-bottom: 50px;
+}
+
+.about-wrapper h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0 auto 50px auto;
+}
+
+.about-wrapper .carousel {
+  float: left;
+  width: 1120px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.about-wrapper .carousel-slide {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 400px;
+  margin: 0 15px;
+}
+
+.about-wrapper .carousel-slide span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  font-size: 1.5em;
+  padding: 15px 0;
+  margin: auto;
+  text-align: center;
+}
+
+.about-wrapper #slideCarouselRight, .about-wrapper #slideCarouselLeft {
+  float: left;
+  cursor: pointer;
+  top: 190px;
+  position: relative;
+  font-size: 2.5em;
+  padding: 0 15px;
+  color: #414e7e;
+}
+
+.about-wrapper #slideCarouselRight:hover, .about-wrapper #slideCarouselLeft:hover {
+  opacity: 0.85;
 }
 
 body {
