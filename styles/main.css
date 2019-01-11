@@ -49,6 +49,20 @@
   }
 }
 
+@media screen and (max-width: 1080px) {
+  .header-top {
+    width: 100%;
+    left: 0;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .header-text:first-child {
+    min-width: 0;
+    width: 0;
+  }
+}
+
 .menu {
   position: absolute;
   top: 110px;
@@ -127,6 +141,12 @@
 .menu .menu-level-one::after {
   font: normal normal normal 14px/1 FontAwesome;
   content: "\f107";
+}
+
+@media screen and (max-width: 1080px) {
+  .menu ul li {
+    margin: 0px 15px;
+  }
 }
 
 .hero {
@@ -223,6 +243,24 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .hero-wrapper {
+    width: 100%;
+  }
+  .hero h1.hero-title {
+    line-height: 1;
+  }
+  .hero-decoration {
+    left: -460px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .hero-decoration {
+    display: none;
+  }
+}
+
 .content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,6 +295,13 @@
   .content-wrapper .content-logo {
     width: 450px;
     padding-right: 120px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content-wrapper .content-logo {
+    width: 300px;
+    padding-right: 50px;
   }
 }
 

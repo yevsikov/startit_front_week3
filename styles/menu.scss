@@ -75,3 +75,9 @@
         content: "\f107";
     }
 }
+
+@media screen and (max-width: 1080px) {
+    .menu ul li {
+        margin: 0px 15px;
+    }
+}

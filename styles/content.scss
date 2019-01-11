@@ -34,3 +34,13 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1200px) {
+  .content-wrapper  {
+    .content-logo {
+      width: 300px;
+      padding-right: 50px;
+    }
+  }
+}
