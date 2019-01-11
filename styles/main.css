@@ -147,6 +147,10 @@
   opacity: 0.7;
 }
 
+.hero-social a i {
+  margin-top: 15px;
+}
+
 .hero-social a:hover {
   opacity: 1;
 }
@@ -760,4 +764,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+*.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
