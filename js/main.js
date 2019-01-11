@@ -61,7 +61,7 @@ $( function() {
       var $firstElement = $('.carousel div:first');
       $lastElement.insertBefore($firstElement);
       $lastElement.show();
-      $('.carousel div:gt(3)').hide();
+      $('.carousel div:gt(4)').hide();
   });
   
   $('#slideCarouselRight').click(function (e) {

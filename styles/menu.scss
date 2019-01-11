@@ -18,11 +18,10 @@
         & li {
             margin: 3px 60px;
             list-style-type: none;
-            cursor: pointer;
         }
 
         & li:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         & li.menu-image {
@@ -31,6 +30,16 @@
             max-height: 50px;
             }
         }
+
+        & li > a {
+            color: $dark-blue;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
     }
 
     & .menu-level-two {
