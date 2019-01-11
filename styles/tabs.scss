@@ -1,13 +1,12 @@
 .tabs-section {
     width: 100%;
     position: relative;
-    overflow: hidden
 }
 
 .tabs-decoration {
     position: absolute;
     bottom: -270px;
-    right: -70px;
+    right: 0;
     z-index: 0;
 }
 
@@ -124,4 +123,14 @@
         margin-top: 0;
     }
 
+}
+
+
+@media screen and (max-width: 1366px) {
+    .tabs-section {
+        overflow: hidden;
+    }
+    .tabs-decoration {
+        right: -250px;
+    }
 }

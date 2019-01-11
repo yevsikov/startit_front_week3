@@ -24,3 +24,13 @@
   }
 
 }
+
+
+@media screen and (max-width: 1366px) {
+  .content-wrapper  {
+    .content-logo {
+      width: 450px;
+      padding-right: 120px;
+    }
+  }
+}

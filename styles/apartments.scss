@@ -76,3 +76,16 @@
     left: 0;
     top: 0;
 }
+
+
+@media screen and (max-width: 1500px) {
+    .apartments-image {
+        max-height: 450px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .apartments-image {
+        max-height: 425px;
+    }
+}

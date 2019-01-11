@@ -38,3 +38,13 @@
     }
 
 }
+
+@media screen and (max-width: 1366px) {
+    .header {
+        &-top {
+            width: 75%;
+            left: 15%;
+            justify-content: space-between;
+        }
+    }
+}

@@ -67,7 +67,30 @@
     &-decoration {
         position: absolute;
         top: 440px;
-        left: -80px
+        left: -80px;
     }
 
+}
+
+
+
+@media screen and (max-width: 1366px) {
+    .hero {
+        h1.hero-title {
+            font-size: 4.5em;
+        }
+    
+        h2.hero-title {
+            font-size: 1.8em;
+            line-height: 0.8em;
+        }
+
+        &-social > a > i{
+            margin-top: 5px;
+        }
+
+        &-decoration {
+            left: -310px;
+        }
+    }
 }

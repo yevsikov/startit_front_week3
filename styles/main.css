@@ -39,6 +39,16 @@
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1366px) {
+  .header-top {
+    width: 75%;
+    left: 15%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
 .menu {
   position: absolute;
   top: 110px;
@@ -197,6 +207,22 @@
   left: -80px;
 }
 
+@media screen and (max-width: 1366px) {
+  .hero h1.hero-title {
+    font-size: 4.5em;
+  }
+  .hero h2.hero-title {
+    font-size: 1.8em;
+    line-height: 0.8em;
+  }
+  .hero-social > a > i {
+    margin-top: 5px;
+  }
+  .hero-decoration {
+    left: -310px;
+  }
+}
+
 .content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,6 +251,13 @@
 
 .content-wrapper .content-text ul {
   list-style-image: url("../images/content_ul.png");
+}
+
+@media screen and (max-width: 1366px) {
+  .content-wrapper .content-logo {
+    width: 450px;
+    padding-right: 120px;
+  }
 }
 
 .apartments-wrapper {
@@ -308,16 +341,27 @@
   top: 0;
 }
 
+@media screen and (max-width: 1500px) {
+  .apartments-image {
+    max-height: 450px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .apartments-image {
+    max-height: 425px;
+  }
+}
+
 .tabs-section {
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 .tabs-decoration {
   position: absolute;
   bottom: -270px;
-  right: -70px;
+  right: 0;
   z-index: 0;
 }
 
@@ -452,6 +496,15 @@
 
 .content-columns p {
   margin-top: 0;
+}
+
+@media screen and (max-width: 1366px) {
+  .tabs-section {
+    overflow: hidden;
+  }
+  .tabs-decoration {
+    right: -250px;
+  }
 }
 
 .testimonials-wrapper {
