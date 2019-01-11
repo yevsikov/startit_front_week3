@@ -16,3 +16,12 @@ $light-blue: #e6f1fa;
 body {
   font-family: 'Rubik', sans-serif;
 }
+
+*::selection {
+  background: $dark-blue;
+  color: $light-blue;
+}
+
+html {
+  scroll-behavior: smooth;
+}

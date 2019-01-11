@@ -15,6 +15,8 @@
 <body>
 <!-- header -->
 <div class="header">
+
+    <!-- HEADER -->
     <div class="header-top">
         <div class="header-text"></div>
         <div class="header-logo">
@@ -25,6 +27,8 @@
             <a href="mailto:contrust.kh@gmail.com" class="header-mail">contrust.kh@gmail.com</a>
         </div>
     </div>
+
+    <!-- MENU -->
     <div class="header-menu menu">
         <ul>
             <li><a href="#content">О центре</a></li>
@@ -41,25 +45,28 @@
             <li><a href="#contacts">Контакты</a></li>
         </ul>
     </div>
+
+    <!-- HERO -->
     <div class="header-hero hero">
         <div class="hero-wrapper">
             <div class="hero-decoration">
                 <img src="images/hero_decoration.png" class="animated fadeIn delay-1s" alt=""/>
             </div>
             <div class="hero-social">
-                <a href="#" traget="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><br>
-                <a href="#" traget="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><br>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
             <div class="hero-description">
                 <h1 class="hero-title">Центр недвижимости</h1>
                 <h2 class="hero-title">покупка, продажа, аренда квартир и домов</h2>
-                <a href="#" class="hero-button animated headShake delay-3s">Перезвоните мне</a>
+                <a href="#contacts" class="hero-button animated headShake delay-3s">Перезвоните мне</a>
             </div>
         </div>
     </div>
+
 </div>
 
-<!-- content -->
+<!-- CONTENT -->
 <div class="content-wrapper" id="content">
     <div class="content-logo">
         <img src="images/logo_big.png" class="content-logo-big" alt="Центр недвижимости Контраст"/>
@@ -91,7 +98,7 @@
     </div>
 </div>
 
-<!-- Apartments -->
+<!-- APARTMENTS -->
 <div class="apartments-wrapper" id="services">
     <div class="apartments-top-border"></div>
     <div class="apartments-line apartments-line-start">
@@ -117,7 +124,7 @@
     <div class="apartments-bottom-border"></div>
 </div>
 
-<!-- tabs -->
+<!-- TABS -->
 <div class="tabs-section">
     <div class="tabs-wrapper" id="tabs">
         <div class="tabs-list">
@@ -179,14 +186,14 @@
                     Задача нашей работы - продать недвижимость по максимально возможной цене в необходимый срок.
                 </p>
                 <p class="text-centered">
-                <a href="#" class="tabs-cta">Перезвоните мне</a>
+                <a href="#contacts" class="tabs-cta">Перезвоните мне</a>
                 </p>
             </div>
             <div id="tabs-2">
                 <p>Lorem ipsum dolor sit amet morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
 
                 <p class="text-centered">
-                    <span class="tabs-cta">Перезвоните мне</span>
+                    <a href="#contacts" class="tabs-cta">Перезвоните мне</a>
                 </p>    
             </div>
             <div id="tabs-3">
@@ -200,7 +207,7 @@
     </div>
 </div>
 
-<!-- Testimonials -->
+<!-- TESTIMONIALS -->
 
 <div class="testimonials-wrapper">
 
@@ -239,7 +246,7 @@
 
 </div>
 
-<!-- About-->
+<!-- ABOUT -->
 <div class="about-wrapper" id="team">
     <h2>Наша команда</h2>
     <div class="about-carousel">
@@ -268,7 +275,7 @@
     </div>
 </div>
 
-<!-- Footer-->
+<!-- FOOTER -->
 <div class="footer-wrapper" id="contacts">
 
     <iframe 
@@ -282,28 +289,60 @@
         <div class="footer-bottom-wrapper">
             <div class="footer-three-columns">
                 <p>
-                    <img src="images/logo_big.png" class="footer-small-logo" alt="Логотип компании Контраст"/> Центр недвижимости Контраст <br>
+                    <img src="images/footer_small_logo.png" class="footer-small-logo" alt="Логотип компании Контраст"/> Центр недвижимости Контраст <br>
                     продажа, покупка и аренда квартир и домов
                 </p>
                 <p>
                     <ul>
-                        <li>О центре</li>
-                        <li>О центре</li>
+                        <li><a href="#content">О центре</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li>
+                            <ul>
+                                <li><a href="#services">Продажа недвижимости</a></li>
+                                <li><a href="#services">Покупка недвижимости</a></li>
+                                <li><a href="#services">Аренда</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#team">Наша команда</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </p>
             </div>    
-            <div class="footer-three-columns footer-form-wrapper">
-                form
-            </div>    
             <div class="footer-three-columns">
-                right1
+                <div class="footer-form-empty">&nbsp;</div>
+                <div class="footer-form-wrapper">
+                    <form name="footer-form">
+                        <p>Оставьте ваши контактные данные и наш консультант свяжется с вами</p>
+                        <input name="name" type="text" value="" placeholder="Имя" required />
+                        <input name="name" type="tel" value="" placeholder="Телефон" required />
+                        <button type="submit" form="footer-form" action="#">Перезвоните мне</button>
+                    </form>
+                </div>
+            </div>    
+            <div class="footer-three-columns footer-three-columns-last">
+                <p>
+                    Харьков, ул. Чернышевская 13 БЦ "Лира", 4этаж, офис 401
+                </p>
+                <p>
+                    +38 097 366 65 84 <br>
+                    contrust.kh@gmail.com
+                </p>
+                <p>
+                    Время работы: Пн-Пт: 9:00 - 19:00 <br>
+                    Сб: 10:00 - 16:00
+                </p>
+                <p class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </p>
+                <p>
+                    &copy; 2018. Все права защищены
+                </p>
             </div>    
         </div>
     </div>
     <div class="footer-decoration">
     </div>
 </div>
-<center>
-    <img src="images/clipboard08.png">
-</center>
+
 </body>

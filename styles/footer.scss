@@ -1,6 +1,7 @@
 .footer-wrapper {
     position: relative;
     font-size: 0.7em;
+    color: $light-blue;
     
     .footer-map {
         height: 555px;
@@ -9,28 +10,108 @@
     }
 
     .footer-bottom {
-        background-color: green;/*$dark-blue;*/
+        background-color: $dark-blue;
         color: #fff;
         width: 100%;
-        height: 230px;
         z-index: 15;
         position: relative;
+        padding-bottom: 20px;;
 
         .footer-bottom-wrapper {
-            background-color: #555;
-            max-width: 1080px;
+            max-width: 1100px;
             margin: auto;
             display: flex;
             justify-content: space-between;
 
             .footer-three-columns {
-                background-color: blueviolet;
+                line-height: 1.5em;
+
+
+                &-last {
+                    text-align: right;
+                    padding-top: 5px;
+                }
+
+                li a {
+                    color: $light-blue;
+                    text-decoration: none;
+                    :hover{
+                        text-decoration: underline;
+                    }
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding-left: 0;
+                    ul {
+                        padding-left: 10px;
+                    }
+                }
             }
         }
 
         .footer-small-logo {
-            max-width: 45px;
+            max-width: 43px;
         }
+
+        .footer-form-empty {
+            width: 350px;
+        }
+
+        .footer-form-wrapper {
+            max-width: 280px;
+            background-color: #fff;
+            color: #000;
+            padding: 10px 35px;
+            text-align: center;
+            position: absolute;
+            bottom: 70px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #aaa;
+
+            p {
+                font-size: 1.7em;
+            }
+
+            input {
+                display: block;
+                width: 100%;
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                padding: 15px;
+                font-size: 1.6em;
+                box-sizing: border-box;
+            }
+
+            button {
+                display: block;
+                border: none;
+                background-color: $dark-blue;
+                color: white;
+                padding: 20px 30px;
+                font-size: 1.6em;
+                font-weight: normal;
+                border-radius: 5px;
+                text-decoration: none;
+                margin-top: 20px;
+                cursor: pointer;
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 25px;
+            }
+
+            button:hover {
+                opacity: 0.95;
+                padding: 20px 32px;
+            }
+        }
+    }
+
+    .footer-social a {
+        font-size: 3em;
+        padding-left: 15px;
+        color: $light-blue;
     }
 
     .footer-decoration {
