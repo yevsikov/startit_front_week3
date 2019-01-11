@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-console.log('js included');
+console.log('Welcome to console! No errors are here.');
 
 //JQUERY TABS
 $( function() {
