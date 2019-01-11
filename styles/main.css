@@ -615,7 +615,9 @@
 
 .footer-wrapper .footer-map {
   height: 555px;
+  width: 100%;
   border: 0;
+  border: none;
   -webkit-filter: hue-rotate(90deg) grayscale(60%) invert(0.1);
   filter: hue-rotate(90deg) grayscale(60%) invert(0.1);
 }
