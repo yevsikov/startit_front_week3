@@ -44,3 +44,18 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .content-wrapper  {
+    flex-direction: column;
+
+    .content-logo {
+      margin: auto;
+    }
+
+    .content-text {
+      margin: auto;
+      max-width: 90%;
+    }
+  }
+}

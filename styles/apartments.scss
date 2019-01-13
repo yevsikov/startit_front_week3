@@ -115,4 +115,16 @@
     .apartments-image {
         max-width: 100%;
     }
+
+    .description-right-bottom, .description-left-bottom, .description-right-top, .description-left-top {
+        bottom: 0;
+        right: 20px;
+        left: unset;
+        top: unset;
+    }
+
+    .apartments-item-description {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
 }
