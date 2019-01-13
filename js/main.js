@@ -10,16 +10,25 @@ $( function() {
 
 //CUSTOM SLIDER
   setInterval(function () {
-      moveRight();
+  //    moveRight();
   }, 3000);
+
   
 	var slideCount = $('#testimonials-slider ul li').length;
 	var slideWidth = $('#testimonials-slider ul li').width();
 	var slideHeight = $('#testimonials-slider ul li').height();
-	var sliderUlWidth = slideCount * slideWidth;
+    var sliderUlWidth = slideCount * slideWidth;
+    
+    window.onresize = function(event) {
+        slideCount = $('#testimonials-slider ul li').length;
+        slideWidth = $('#testimonials-slider ul li').width();
+        slideHeight = $('#testimonials-slider ul li').height();
+        sliderUlWidth = slideCount * slideWidth;
+        $('#testimonials-slider').css({ width: slideWidth, height: slideHeight });
+        $('#testimonials-slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+    };
 	
 	$('#testimonials-slider').css({ width: slideWidth, height: slideHeight });
-	
 	$('#testimonials-slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
 	
     $('#testimonials-slider ul li:last-child').prependTo('#testimonials-slider ul');
