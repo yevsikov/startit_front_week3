@@ -10,7 +10,7 @@ $( function() {
 
 //CUSTOM SLIDER
   setInterval(function () {
-  //    moveRight();
+     moveRight();
   }, 3000);
 
   
