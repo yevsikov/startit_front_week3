@@ -388,13 +388,41 @@
 
 @media screen and (max-width: 1500px) {
   .apartments-image {
-    max-height: 450px;
+    max-height: 439px;
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1365px) {
   .apartments-image {
-    max-height: 425px;
+    max-height: 365px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .apartments-image {
+    max-height: 325px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .apartments-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .apartments-item {
+    margin: 10px auto;
+  }
+  .apartments-image {
+    max-width: 690px;
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .apartments-image {
+    max-width: 100%;
   }
 }
 
