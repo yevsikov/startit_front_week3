@@ -136,9 +136,24 @@
 @media screen and (max-width: 440px) {
     .menu {
 
-        ul li {
+        ul li.menu-single-item {
             margin: -18px 4px;
             font-size: 0.6em;
+        }
+
+        ul li.menu-single-item:before {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .menu {
+
+        ul li.menu-single-item {
+            margin: -18px 2px;
+            padding: 5px;
+            font-size: 0.5em;
         }
 
         ul li.menu-single-item:before {

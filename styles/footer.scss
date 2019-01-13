@@ -2,7 +2,11 @@
     position: relative;
     font-size: 0.7em;
     color: $light-blue;
-    
+
+    .white-area {
+        display: none;
+    }
+
     .footer-map {
         height: 555px;
         width: 100%;
@@ -126,3 +130,120 @@
 
 
 }
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .footer-wrapper {
+        .footer-bottom {
+            .footer-bottom-wrapper {
+                .footer-three-columns {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-wrapper {
+        .footer-map {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 50%;
+            height: 200px;
+            z-index: 20;
+        }
+        .white-area {
+            display: block;
+            width: 100%;
+            height: 560px;
+            background-color: white;
+        }
+        .footer-bottom {
+            .footer-form-wrapper {
+                top: -560px;
+                width: 100%;
+                max-width: 100%;
+                left: 0;
+                box-sizing: border-box;
+                height: 350px;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            .footer-bottom-wrapper {
+                flex-direction: column;
+                .footer-three-columns {
+                    &-last {
+                        margin-left: 65%;
+                        margin-right: 10px;
+                    }
+                    
+                    ul {
+                        text-align: center;
+                        li {
+                            display: inline;
+                            margin: 15px;
+                        }
+                        ul {
+                           display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .footer-wrapper {
+        .footer-bottom {
+            .footer-bottom-wrapper {
+                .footer-three-columns {
+                    &-last {
+                        margin-left: 50%;
+                        margin-right: 10px;
+                    }
+                    ul {
+                        li {
+                            margin: 5px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+   
+        
+    
+
+
+
+
+@media screen and (max-width: 480px) {
+    .footer-wrapper {
+        .footer-map {
+            width: 35%;
+        }
+
+        .footer-bottom {
+            .footer-form-empty {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

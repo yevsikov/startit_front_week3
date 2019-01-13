@@ -38,7 +38,7 @@
   display: none;
 }
 
-.header-phone {
+.header-phone:hover {
   text-decoration: underline;
 }
 
@@ -134,6 +134,18 @@
     content: '\f003';
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 1.2em;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-phone .hide-desktop {
+    display: none;
+  }
+  .header-phone:before {
+    content: '\f2a0';
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1.3em;
     margin-right: 10px;
   }
 }
@@ -267,9 +279,20 @@
 }
 
 @media screen and (max-width: 440px) {
-  .menu ul li {
+  .menu ul li.menu-single-item {
     margin: -18px 4px;
     font-size: 0.6em;
+  }
+  .menu ul li.menu-single-item:before {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .menu ul li.menu-single-item {
+    margin: -18px 2px;
+    padding: 5px;
+    font-size: 0.5em;
   }
   .menu ul li.menu-single-item:before {
     margin-bottom: 0;
@@ -409,6 +432,17 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .hero-decoration {
+    display: none;
+  }
+  .hero h1.hero-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: unset;
+  }
+}
+
 .content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,6 +500,12 @@
   .content-wrapper .content-text {
     margin: auto;
     max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .content-wrapper .content-logo {
+    width: 250px;
   }
 }
 
@@ -946,10 +986,10 @@
 
 @media screen and (max-width: 960px) {
   .testimonials-wrapper #testimonials-slider ul li {
-    width: 790px;
+    width: 780px;
   }
   .testimonials-wrapper #testimonials-slider ul li p {
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
   .testimonials-wrapper .slider-quotes-open img, .testimonials-wrapper .slider-quotes-close img {
     max-width: 75px;
@@ -974,6 +1014,13 @@
   .testimonials-wrapper #testimonials-slider ul li {
     width: 600px;
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .testimonials-wrapper #testimonials-slider ul li {
+    width: 500px;
+    height: 230px;
   }
 }
 
@@ -1098,6 +1145,9 @@
 }
 
 @media screen and (max-width: 680px) {
+  .about-carousel {
+    padding-bottom: 0;
+  }
   .about-wrapper .carousel {
     width: 460px;
     height: 840px;
@@ -1130,6 +1180,10 @@
   position: relative;
   font-size: 0.7em;
   color: #e6f1fa;
+}
+
+.footer-wrapper .white-area {
+  display: none;
 }
 
 .footer-wrapper .footer-map {
@@ -1260,6 +1314,80 @@
   top: 300px;
   width: 100%;
   height: 260px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-wrapper .footer-bottom .footer-bottom-wrapper .footer-three-columns {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-wrapper .footer-map {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 50%;
+    height: 200px;
+    z-index: 20;
+  }
+  .footer-wrapper .white-area {
+    display: block;
+    width: 100%;
+    height: 560px;
+    background-color: white;
+  }
+  .footer-wrapper .footer-bottom .footer-form-wrapper {
+    top: -560px;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 350px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .footer-wrapper .footer-bottom .footer-bottom-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer-wrapper .footer-bottom .footer-bottom-wrapper .footer-three-columns-last {
+    margin-left: 65%;
+    margin-right: 10px;
+  }
+  .footer-wrapper .footer-bottom .footer-bottom-wrapper .footer-three-columns ul {
+    text-align: center;
+  }
+  .footer-wrapper .footer-bottom .footer-bottom-wrapper .footer-three-columns ul li {
+    display: inline;
+    margin: 15px;
+  }
+  .footer-wrapper .footer-bottom .footer-bottom-wrapper .footer-three-columns ul ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .footer-wrapper .footer-bottom .footer-bottom-wrapper .footer-three-columns-last {
+    margin-left: 50%;
+    margin-right: 10px;
+  }
+  .footer-wrapper .footer-bottom .footer-bottom-wrapper .footer-three-columns ul li {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-wrapper .footer-map {
+    width: 35%;
+  }
+  .footer-wrapper .footer-bottom .footer-form-empty {
+    width: 100%;
+  }
 }
 
 body {

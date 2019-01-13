@@ -36,7 +36,7 @@
         }
     }
 
-    &-phone {
+    &-phone:hover {
         text-decoration: underline;
     }
 
@@ -147,6 +147,24 @@
             margin-right: 10px;
         }
 
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        &-phone {
+            .hide-desktop {
+                display: none;
+            }
+        }
+
+        &-phone:before {
+            content: '\f2a0';
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 1.3em;
+            margin-right: 10px;
+        }
 
     }
 }

@@ -124,10 +124,10 @@
 @media screen and (max-width: 960px) {
   .testimonials-wrapper {
     #testimonials-slider ul li {
-      width: 790px;
+      width: 780px;
     }
     #testimonials-slider ul li p {
-      font-size: 0.95em;
+      font-size: 0.9em;
     }
     .slider-quotes-open, .slider-quotes-close  {
       img {
@@ -167,6 +167,17 @@
     #testimonials-slider ul li {
       width: 600px;
       height: 200px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .testimonials-wrapper {
+
+    #testimonials-slider ul li {
+      width: 500px;
+      height: 230px;
     }
 
   }
