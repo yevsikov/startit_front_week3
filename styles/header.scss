@@ -16,6 +16,10 @@
         }
     }
 
+    &-logo-mobile {
+        display: none;
+    }
+
     &-text {
         min-width: 15%;
         text-align: right;
@@ -25,6 +29,15 @@
     &-phone {
         font-size: 1.5em;
         color: $dark-blue;
+        text-decoration: none;
+
+        .hide-desktop {
+            display: none;
+        }
+    }
+
+    &-phone {
+        text-decoration: underline;
     }
 
     &-mail {
@@ -61,5 +74,79 @@
             min-width: 0;
             width: 0;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        .header-top {
+            height: 150px;
+            justify-content: space-between;
+        }
+        .header-logo {
+            margin: auto 0;
+        }
+        .header-logo img {
+            display: none;
+        }
+        .header-logo img.header-logo-mobile {
+            display: block;
+            min-height: 100px;
+            margin-left: 30px;
+        }
+
+        &-text:first-child {
+            display: none;
+        }
+
+        &-phone {
+            background-color: $dark-blue;
+            padding: 0 15px;
+            line-height: 3em;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2em;
+            margin-right: 30px;
+            display: block;
+            margin-bottom: 20px;
+            text-decoration: none;
+
+            .hide-desktop {
+                display: inline;
+            }
+
+            .hide-mobile {
+                display: none;
+            }
+        }
+
+        &-phone:before {
+            content: '\f2a0';
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        
+        &-mail {
+
+            font-size: 2.8em;
+            color: #414e7e;
+            text-decoration: none;
+            margin-right: 20px;
+
+            span {
+                display: none;
+            }
+        }
+
+        &-mail:before {
+            content: '\f003';
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+
     }
 }

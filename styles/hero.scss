@@ -111,8 +111,42 @@
 
 
 @media screen and (max-width: 960px) {
-
     .hero-decoration {
-        display: none;
+       // display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-decoration {
+       // display: none;
+    }
+
+    .hero {
+        height: 960px;
+        background-position: 50%;
+
+        .hero-social {
+            font-size: 4em;
+        }
+
+        .hero-description {
+            padding-top: 0;
+        }
+
+        h1.hero-title {
+            font-size: 3em;
+            line-height: unset;
+
+        }
+    
+        h2.hero-title {
+            font-size: 1.4em;
+            line-height: unset;
+        }
+
+        .hero-button {
+            display: none;
+        }
+
     }
 }
